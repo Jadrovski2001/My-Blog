@@ -1,0 +1,24 @@
+// Override default variables
+$primary: #786c7d; // Change primary color to a different shade
+$font-size-base: 1.1rem; // Change base font size
+$body-bg: #f8f9fa; // Change background color
+
+// Import Bootstrap's functions, variables, and mixins
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Import Bootstrap's main styles
+@import "node_modules/bootstrap/scss/bootstrap";
+// Define a custom button style using the button-variant mixin
+.custom-button {
+    @include button-variant(#c4df17, #fff); // Custom button with a red background and white text
+    border-radius: 8px; // Add a custom border radius for a rounded look
+    padding: 10px 20px; // Adjust padding for better spacing
+    font-weight: bold; // Make the text bold
+    transition: background-color 0.3s; // Smooth transition effect
+  
+    &:hover {
+      background-color: darken(#eb0b0f, 100%); // Darken the background on hover
+    }
+  }

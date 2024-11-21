@@ -3,22 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Portfolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="custom-bootstrap.css">
+    <title>Blog Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #ff9800;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .about-section {
+            padding: 50px 0;
+        }
+        .blog-card img {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="C:\Users\pc\Desktop\Cosmic Development-Intership\image3.jpg" alt="Profile Picture" class="profile-pic mb-3">
+                <h5>Profile Picture</h5>
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                  I am Aleksandar Jadrovski, a dedicated frontend developer with a passion for crafting seamless and visually stunning web experiences. Proficient in HTML, CSS, and JavaScript, React I thrive on turning creative ideas into responsive and user-friendly websites. With a keen eye for design and a commitment to staying updated on industry trends, I am excited to contribute my skills to projects that push the boundaries of web development.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Blog Posts Section -->
     <div class="container">
-        <button class="btn btn-primary">Custom Primary Button</button>
-        <button class="custom-button">Custom Primary Button</button>
-        <p>This text uses the new base font size and background color.</p>
-      </div>
+        <h2 class="text-center mb-4">Latest Blog Posts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="C:\Users\pc\Desktop\Cosmic Development-Intership\creative1.jpeg" class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Stay Creative</h5>
+                        <p class="card-text">
+                            Creativity isn't just for artists. It's something we can all nurture. In this post, I share tips on staying inspired in a fast-paced world.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="C:\Users\pc\Desktop\Cosmic Development-Intership\Art.jpg" class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Art of Journaling</h5>
+                        <p class="card-text">
+                            Journaling is a powerful tool for self-reflection and growth. In this post, I explore the benefits and how to get started.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="C:\Users\pc\Desktop\Cosmic Development-Intership\Travel.jpeg" class="card-img-top" alt="Blog 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Why Travel is Essential</h5>
+                        <p class="card-text">
+                            Traveling not only enriches your life but also helps you see the world from a different perspective. Here's why it's so important.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Bootstrap JS and FontAwesome for Icons -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
